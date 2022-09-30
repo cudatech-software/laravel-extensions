@@ -21,6 +21,10 @@ it('can invoke specific extension', function () {
         $extension->invoke('test', $text = time()),
         $text
     );
+    assertEquals(
+        $extension->invoke('test2'),
+        'hello world'
+    );
 });
 
 it('can invoke all extensions', function () {

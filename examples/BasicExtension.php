@@ -10,6 +10,9 @@ class BasicExtension extends Extension
     {
         $this->invokables = [
             'test' => [$this, 'test'],
+            'test2' => function () {
+                return 'hello world';
+            },
         ];
     }
 
