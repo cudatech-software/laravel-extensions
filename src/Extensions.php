@@ -12,6 +12,7 @@ class Extensions
     public function addExtension(Extension $extension): self
     {
         $this->extensions[] = $extension;
+
         return $this;
     }
 

@@ -27,6 +27,7 @@ class Extension implements \CudaTech\Contracts\Extensions\Extension
     public function setInvokables(array $invokables): \CudaTech\Contracts\Extensions\Extension
     {
         $this->invokables = $invokables;
+
         return $this;
     }
 
@@ -40,6 +41,7 @@ class Extension implements \CudaTech\Contracts\Extensions\Extension
     public function addInvokable(string $name, callable|array|string|Closure $invokable): \CudaTech\Contracts\Extensions\Extension
     {
         $this->invokables[$name] = $invokable;
+
         return $this;
     }
 

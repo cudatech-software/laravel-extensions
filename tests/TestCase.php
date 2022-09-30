@@ -2,9 +2,9 @@
 
 namespace CudaTech\LaravelExtensions\Tests;
 
+use CudaTech\LaravelExtensions\ExtensionsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use CudaTech\LaravelExtensions\ExtensionsServiceProvider;
 
 class TestCase extends Orchestra
 {
